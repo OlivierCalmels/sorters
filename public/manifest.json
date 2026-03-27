@@ -1,6 +1,6 @@
 {
-  "short_name": "RGHP Boilerplate",
-  "name": "React GitHub Pages Boilerplate",
+  "short_name": "Sorters",
+  "name": "Sorters — visualisation de tris",
   "icons": [],
   "start_url": ".",
   "display": "standalone",

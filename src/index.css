@@ -7,6 +7,8 @@
 body {
   margin: 0;
   font-family:
+    system-ui,
+    -apple-system,
     "Segoe UI",
     Roboto,
     "Helvetica Neue",
@@ -14,11 +16,12 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #f1f5f9;
-  color: #0f172a;
+  background: #f4f6f8;
+  color: #121518;
 }
 
-code {
+code,
+.inline-code {
   font-family:
     ui-monospace,
     SFMono-Regular,
@@ -26,4 +29,11 @@ code {
     Monaco,
     Consolas,
     monospace;
+  font-size: 0.9em;
+}
+
+.inline-code {
+  background: rgba(15, 23, 42, 0.06);
+  padding: 0.12rem 0.35rem;
+  border-radius: 4px;
 }

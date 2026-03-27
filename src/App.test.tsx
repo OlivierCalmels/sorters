@@ -1,19 +1,23 @@
 import React from "react";
 import { render, screen } from "@testing-library/react";
+import { MemoryRouter } from "react-router-dom";
 import App from "./App";
 
-test("affiche le titre du boilerplate", () => {
-  render(<App />);
-  expect(
-    screen.getByRole("heading", { name: /React GitHub Pages Boilerplate/i })
-  ).toBeInTheDocument();
+test("affiche le titre Sorters", () => {
+  render(
+    <MemoryRouter initialEntries={["/"]}>
+      <App />
+    </MemoryRouter>
+  );
+  expect(screen.getByRole("heading", { name: /^Sorters$/i })).toBeInTheDocument();
 });
 
-test("contient le lien vers le tutoriel gitname", () => {
-  render(<App />);
-  const link = screen.getByRole("link", { name: /gitname\/react-gh-pages/i });
-  expect(link).toHaveAttribute(
-    "href",
-    "https://github.com/gitname/react-gh-pages"
+test("liste les modes de tri", () => {
+  render(
+    <MemoryRouter initialEntries={["/"]}>
+      <App />
+    </MemoryRouter>
   );
+  expect(screen.getByRole("link", { name: /Tri à bulles/i })).toBeInTheDocument();
+  expect(screen.getByRole("link", { name: /Tri par sélection/i })).toBeInTheDocument();
 });
