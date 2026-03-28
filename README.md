@@ -6,8 +6,9 @@ Boilerplate **React** + **TypeScript** (**Create React App**) prêt pour **GitHu
 
 ## Prérequis
 
-- **Node.js** **18+** (LTS recommandée ; le build CRA / ESLint peut échouer en dessous) et **npm**
-  - Un fichier [`.nvmrc`](.nvmrc) est fourni (`18`) : avec [nvm](https://github.com/nvm-sh/nvm), exécutez `nvm use`.
+- **Node.js** **18+** (LTS recommandée ; le build CRA / ESLint et `gh-pages` ≥6 peuvent échouer en dessous) et **npm**
+  - Un fichier [`.nvmrc`](.nvmrc) est fourni (`18`) : avec [nvm](https://github.com/nvm-sh/nvm), exécutez `nvm use` (ou installez la LTS 18 depuis [nodejs.org](https://nodejs.org/)).
+  - Le fichier [`.npmrc`](.npmrc) contient `engine-strict=true` : si la version de Node est inférieure à celle indiquée dans `package.json` → `engines`, `npm install` refusera de s’exécuter.
 - **Git**
 - Un compte **GitHub**
 

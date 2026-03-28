@@ -2,7 +2,7 @@
   "name": "react-gh-pages-boilerplate",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://oliviercalmels.github.io/sorters",
+  "homepage": "https://OlivierCalmels.github.io/sorters",
   "description": "Boilerplate React (TypeScript) déployable sur GitHub Pages — procédure alignée sur gitname/react-gh-pages.",
   "dependencies": {
     "@testing-library/dom": "^8.20.1",
@@ -10,7 +10,7 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "@types/jest": "^27.5.2",
-    "@types/node": "^16.18.126",
+    "@types/node": "^18.19.76",
     "@types/react": "^18.3.12",
     "@types/react-dom": "^18.3.1",
     "framer-motion": "^12.38.0",
