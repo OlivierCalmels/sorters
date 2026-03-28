@@ -2,7 +2,7 @@
   "name": "react-gh-pages-boilerplate",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://YOUR_GITHUB_USERNAME.github.io/YOUR_REPO_NAME",
+  "homepage": "https://oliviercalmels.github.io/sorters",
   "description": "Boilerplate React (TypeScript) déployable sur GitHub Pages — procédure alignée sur gitname/react-gh-pages.",
   "dependencies": {
     "@testing-library/dom": "^8.20.1",

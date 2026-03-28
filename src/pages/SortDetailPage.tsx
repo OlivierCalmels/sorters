@@ -96,6 +96,13 @@ export function SortDetailPage() {
     setStatus("running");
   }, [status]);
 
+  const handleStop = useCallback(() => {
+    if (status !== "running") {
+      return;
+    }
+    setStatus("idle");
+  }, [status]);
+
   const handleReset = useCallback(() => {
     setInitialOrder(shuffle(rangeOneTo(SORT_ITEM_COUNT)));
     setStepIndex(0);
@@ -138,6 +145,14 @@ export function SortDetailPage() {
               disabled={status === "running" || status === "done"}
             >
               Lancer le tri
+            </button>
+            <button
+              type="button"
+              className="btn btn--ghost"
+              onClick={handleStop}
+              disabled={status !== "running"}
+            >
+              Arrêter
             </button>
             <button
               type="button"
