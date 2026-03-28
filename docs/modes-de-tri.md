@@ -89,5 +89,7 @@ Ce document regroupe les principales familles d’algorithmes de tri sur des cl�
 |-----------------|-------------|---------------------|
 | Tri à bulles    | Bubble sort | Voir les swaps adjacents et la lenteur sur \(n\) grand. |
 | Tri par sélection | Selection sort | Minimum global puis placement ; contraste avec le bulle. |
+| Tri par insertion | Insertion sort (swaps adjacents) | Préfixe trié qui grandit ; efficace si données presque ordonnées. |
+| Tri par tas | Heapsort | Tas max en place puis extractions ; \(O(n \log n)\), moins d’étapes que les tris naïfs. |
 
 Pour modifier le nombre \(N\) d’éléments visualisés, voir la constante `SORT_ITEM_COUNT` dans `src/config/sortConfig.ts`.
