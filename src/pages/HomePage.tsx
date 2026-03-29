@@ -17,7 +17,11 @@ export function HomePage() {
       <ul className="mode-grid">
         {SORT_MODES.map((mode) => (
           <li key={mode.id}>
-            <Link className="mode-card" to={`/tri/${mode.id}`}>
+            <Link
+              className="mode-card"
+              to={`/tri/${mode.id}`}
+              aria-label={mode.title}
+            >
               <span className="mode-card__title">{mode.title}</span>
               <span className="mode-card__desc">{mode.shortDescription}</span>
               <span className="mode-card__cta">Voir le mode →</span>

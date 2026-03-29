@@ -21,7 +21,7 @@ test("liste les modes de tri", () => {
   );
   for (const mode of SORT_MODES) {
     expect(
-      screen.getByRole("link", { name: new RegExp(mode.title, "i") })
+      screen.getByRole("link", { name: mode.title, exact: true })
     ).toBeInTheDocument();
   }
 });
